@@ -25,8 +25,13 @@ class _boardState extends State<board> {
       body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
 
-        children: [Center(child: Tiles(onClick: onClick, number: number)),
-        SizedBox(height: 40,),
+        children: [
+          
+           SizedBox(
+            height: 150,
+           ),
+          Center(child: Tiles(onClick: onClick, number: number)),
+        // SizedBox(height: 40,),
         Text(
                             "Moves: ${moves}",
                             style: GoogleFonts.robotoSlab(
@@ -34,7 +39,7 @@ class _boardState extends State<board> {
                                 color: Colors.black, fontWeight: FontWeight.w400),
                           ),
                           SizedBox(
-                            height: 100,
+                            height: 30,
                           ),
                           Container(
                             

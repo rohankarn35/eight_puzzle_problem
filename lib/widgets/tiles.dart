@@ -10,8 +10,8 @@ class Tiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.4,
-      width: MediaQuery.of(context).size.width * 0.2,
+      height: MediaQuery.of(context).size.height*0.5,
+      width: MediaQuery.of(context).size.width *0.8,
       child: GridView.builder(
           itemCount: number.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -29,11 +29,11 @@ class Tiles extends StatelessWidget {
                       
                       decoration: BoxDecoration(
                         color: Colors.deepPurpleAccent,
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(4),
                         
                       ),
-                      height: 20,
-                      width: 20,
+                      height: 50,
+                      width: 50,
                       child: Center(
                         child: FittedBox(
                           child: Text(
